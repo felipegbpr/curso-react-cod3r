@@ -4,7 +4,7 @@ import React from 'react';
 
 import Primeiro from './components/basicos/Primeiro';
 
-const tag = <strong>Olá React</strong>;
+// const tag = <strong>Olá React</strong>;
 
 ReactDOM.render(
   <div>
