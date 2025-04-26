@@ -11,12 +11,17 @@ import ComParametro from './components/basicos/ComParametro';
 import Fragmento from './components/basicos/Fragmento';
 import Aleatorio from './components/basicos/Aleatorio';
 import ListaAlunos from './components/repeticao/ListaAlunos';
+import TabelaProdutos from './components/repeticao/TabelaProdutos';
 
 export default () => (
   <div className="App">
     <h1>Fundamentos do React (Arrow)</h1>
 
     <div className="Cards">
+      <Card titulo="#07 - Desafio Repetição" color="#6F826A">
+        <TabelaProdutos></TabelaProdutos>
+      </Card>
+
       <Card titulo="#06 - Repetição" color="#6F826A">
         <ListaAlunos></ListaAlunos>
       </Card>
