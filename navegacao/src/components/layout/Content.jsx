@@ -1,12 +1,10 @@
 import './Content.css';
 import React from 'react';
 
-const Content = props => {
-    return (
-        <main className="Content">
-            Componente Content
-        </main>
-    )
-}
+const Content = props => (
+    <main className="Content">
+        <h1>Componente Content</h1>
+    </main>
+);
 
 export default Content;
