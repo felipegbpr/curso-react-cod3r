@@ -3,7 +3,7 @@ import PageTitle from '../../components/layout/PageTitle'
 import SectionTitle from '../../components/layout/SectionTitle'
 
 const merge = function(s1, s2) {
-    return s1 + s2;
+    return [...s1].map((e, i) => `${e}${s2[i] || ""}`).join('');
 }
 
 const UseRef = (props) => {
@@ -17,7 +17,7 @@ const UseRef = (props) => {
     useEffect(function() {
         count.current = count.current + 1;
         myInput2.current.focus();
-    }, [value1, value2]);
+    }, [value1]);
 
     useEffect(function() {
         count.current++;
