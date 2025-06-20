@@ -28,6 +28,12 @@ export default props => (
                 onClick={props.handleSearch}
             >
             </IconButton>
+            <IconButton 
+                style='default' 
+                icon='close' 
+                onClick={props.handleClear}
+            >
+            </IconButton>
         </Grid>
     </div>
 );
