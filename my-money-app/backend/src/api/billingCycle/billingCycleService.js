@@ -1,7 +1,7 @@
 const BillingCycle = require('./billingCycle');
 
 BillingCycle.methods(['get', 'post', 'put', 'delete']);
-BillingCycle.updateOptions({new: true, runValidators: true});
+BillingCycle.updateOptions({ new: true, runValidators: true });
 
 BillingCycle.route('get', (req, res, next) => {
 
@@ -9,7 +9,7 @@ BillingCycle.route('get', (req, res, next) => {
         if(!err) {
             res.json(docs);
         } else {
-            res.status(500).json({errors: [error]});
+            res.status(500).json({errors: [err]});
         }
     });
 });
