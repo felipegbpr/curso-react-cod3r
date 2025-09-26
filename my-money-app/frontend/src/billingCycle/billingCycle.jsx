@@ -10,7 +10,7 @@ import TabHeader from '../common/tab/tabHeader';
 import TabsContent from '../common/tab/tabsContent';
 import TabContent from '../common/tab/tabContent';
 import { selectTab, showTabs } from '../common/tab/tabActions';
-import List from './billingListCycle';
+import List from './billingCycleList';
 
 class BillingCycle extends Component {
 
